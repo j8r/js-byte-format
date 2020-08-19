@@ -1,0 +1,13 @@
+name: CI
+
+on: [push]
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    container: node:alpine
+    steps:
+      - name: Download source code
+        uses: actions/checkout@v2
+      - name: Run tests
+        run: "node --unhandled-rejections=strict test"

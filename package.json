@@ -1,0 +1,12 @@
+{
+  "name": "js-byte-format",
+  "description": "Encode/decode datatypes (String, Number, Object) to/from bytes.",
+  "version": "0.1.0",
+  "author": "Julien Reichardt",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j8r/js-byte-format.git"
+  },
+  "type": "module"
+}
