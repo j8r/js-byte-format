@@ -1,5 +1,5 @@
 import { strict as assert } from "assert";
-import ByteEncoder from "../lib/encoder.js"
+import ByteEncoder from "../lib/ByteEncoder.js"
 
 function assertBytes(byteEncoder, array) {
   assert.deepEqual(byteEncoder.toBytes(), new Uint8Array(array))

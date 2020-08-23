@@ -1,5 +1,5 @@
 import { strict as assert } from "assert";
-import ByteDecoder from "../lib/decoder.js"
+import ByteDecoder from "../lib/ByteDecoder.js"
 
 function newDecoder(array) {
   return new ByteDecoder(new Uint8Array(array).buffer)
