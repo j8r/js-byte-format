@@ -9,6 +9,11 @@ DecodeString: {
   assert.equal(newDecoder([97, 98, 99, 0]).readString(), "abc")
 }
 
+DecodeBool: {
+  assert.equal(newDecoder([0]).readBool(), false)
+  assert.equal(newDecoder([1]).readBool(), true)
+}
+
 DecodeInt8: {
   assert.equal(newDecoder([1]).readInt8(), 1)
 }

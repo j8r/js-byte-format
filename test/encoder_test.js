@@ -10,6 +10,14 @@ EncodeString: {
   assertBytes(byteEncoder, [97, 98, 99, 0])
 }
 
+EncodeBool: {
+  let byteEncoder = new ByteEncoder().writeBool(false)
+  assertBytes(byteEncoder, [0])
+
+  byteEncoder = new ByteEncoder().writeBool(true)
+  assertBytes(byteEncoder, [1])
+}
+
 EncodeInt8: {
   let byteEncoder = new ByteEncoder().writeInt8(1)
   assertBytes(byteEncoder, [1])
