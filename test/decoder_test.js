@@ -5,9 +5,9 @@ function newDecoder(array) {
   return new ByteDecoder(new Uint8Array(array).buffer)
 }
 
-DecodeString: {
-  assert.equal(newDecoder([97, 98, 99, 0]).readString(), "abc")
-}
+//DecodeString: {
+  //assert.equal(newDecoder([97, 98, 99, 0]).readString(), "abc")
+//}
 
 DecodeBool: {
   assert.equal(newDecoder([0]).readBool(), false)
@@ -47,7 +47,8 @@ DecodeFloat64: {
 }
 
 DecodeMultiple: {
-  let byteDecoder = newDecoder([97, 0, 1])
-  assert.equal(byteDecoder.readString(), "a")
-  assert.equal(byteDecoder.readInt8(), 1)
+  let byteDecoder = newDecoder([1, 0, 97, 98, 99, 0, 0, 0])
+  assert.equal(byteDecoder.readUint16(), 1)
+  assert.equal(byteDecoder.readString(), "abc")
+  assert.equal(byteDecoder.readInt16(), 0)
 }
