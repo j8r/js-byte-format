@@ -1,4 +1,4 @@
-import { strict as assert } from "assert";
+import { strict as assert } from "assert"
 import ByteEncoder from "../lib/ByteEncoder.js"
 
 function assertBytes(byteEncoder, array) {

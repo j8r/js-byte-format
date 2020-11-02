@@ -19,7 +19,7 @@ See tests for [decoder](test/decoder_test.js) and [encoder](test/encoder_test.js
 
 `node --unhandled-rejections=strict test`
 
-An exit 0 means all tests have passed with success, otherwise an exception will be printed and a exit 1 returned..
+An exit 0 means all tests have passed with success, otherwise an exception will be printed and a exit 1 returned.
 
 ## License
 

@@ -1,13 +1,13 @@
-import { strict as assert } from "assert";
+import { strict as assert } from "assert"
 import ByteDecoder from "../lib/ByteDecoder.js"
 
 function newDecoder(array) {
   return new ByteDecoder(new Uint8Array(array).buffer)
 }
 
-//DecodeString: {
-  //assert.equal(newDecoder([97, 98, 99, 0]).readString(), "abc")
-//}
+DecodeString: {
+  assert.equal(newDecoder([97, 98, 99, 0]).readString(), "abc")
+}
 
 DecodeBool: {
   assert.equal(newDecoder([0]).readBool(), false)
