@@ -1,7 +1,7 @@
 {
   "name": "js-byte-format",
   "description": "Encode/decode datatypes (String, Number, Object) to/from bytes.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Julien Reichardt",
   "license": "ISC",
   "repository": {
