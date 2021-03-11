@@ -23,4 +23,4 @@ An exit 0 means all tests have passed with success, otherwise an exception will 
 
 ## License
 
-Copyright (c) 2020 Julien Reichardt - ISC License
+Copyright (c) 2020-2021 Julien Reichardt - ISC License
